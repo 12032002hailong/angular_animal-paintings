@@ -1,13 +1,15 @@
-<div *ngFor="let product of products">
-  <mat-card class="product-card">
-    <img
-      mat-card-image
-      src="assets/images/{{ product.image_url }}"
-      alt="image asdf"
-    />
-    <mat-card-content>
-      <mat-card-title>{{ product.name }}</mat-card-title>
-      <mat-card-title>{{ product.price }} $</mat-card-title>
-    </mat-card-content>
-  </mat-card>
+<div fxLayout="row wrap" fxLayoutGap="50px grid" class="container">
+  <div *ngFor="let product of products">
+    <mat-card class="product-card">
+      <img
+        mat-card-image
+        src="assets/images/{{ product.image_url }}"
+        alt="image asdf"
+      />
+      <mat-card-content>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-title>{{ product.price }} $</mat-card-title>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>

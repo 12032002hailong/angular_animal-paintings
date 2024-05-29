@@ -4,12 +4,13 @@ import { ProductService } from '../product.service';
 import { NgFor } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [NgFor, MatButtonModule, MatCardModule],
+  imports: [NgFor, MatButtonModule, MatCardModule, FlexLayoutModule],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
