@@ -1,3 +1,13 @@
-<ul *ngFor="let item of products">
-  <li>{{ item.name }}</li>
-</ul>
+<div *ngFor="let product of products">
+  <mat-card class="product-card">
+    <img
+      mat-card-image
+      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-title>{{ product.price }}</mat-card-title>
+    </mat-card-content>
+  </mat-card>
+</div>
