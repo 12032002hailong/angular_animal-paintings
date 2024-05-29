@@ -2,12 +2,12 @@
   <mat-card class="product-card">
     <img
       mat-card-image
-      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      alt="Photo of a Shiba Inu"
+      src="assets/images/{{ product.image_url }}"
+      alt="image asdf"
     />
     <mat-card-content>
       <mat-card-title>{{ product.name }}</mat-card-title>
-      <mat-card-title>{{ product.price }}</mat-card-title>
+      <mat-card-title>{{ product.price }} $</mat-card-title>
     </mat-card-content>
   </mat-card>
 </div>
