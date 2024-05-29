@@ -123,6 +123,35 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "9bdfc2dd-b650-4af8-a5ee-64869cea5bad",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "checkout",
+      "responses": [
+        {
+          "uuid": "5a0cd76b-7446-4bef-8263-79f2811c2d7f",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -141,6 +170,10 @@
     {
       "type": "route",
       "uuid": "59a081b2-b730-4713-af62-00f310021813"
+    },
+    {
+      "type": "route",
+      "uuid": "9bdfc2dd-b650-4af8-a5ee-64869cea5bad"
     }
   ],
   "proxyMode": false,
