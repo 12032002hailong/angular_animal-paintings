@@ -2,7 +2,11 @@
   max-width: 150px;
 }
 
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
+mat-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+mat-card {
+  transition: transform 0.2s;
 }
